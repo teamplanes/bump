@@ -1,7 +1,8 @@
 {
-	"name": "@planes/bump",
+	"name": "bump-json-file",
 	"version": "0.0.1",
 	"main": "index.js",
+	"public": true,
 	"author": "Henry Kirkness",
 	"license": "MIT",
 	"bin": {
