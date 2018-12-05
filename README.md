@@ -2,12 +2,19 @@
 
 `bump` any semver version in any JSON file via a simple and basic CLI.
 
+### install
+
+```sh
+$ yarn global add bump-json-file
+$ npm i -g bump-json-file
+```
+
 ### example
 
 Bump will by default bump `version` in `package.json`. 
 
 ```sh
-bump
+$ bump
 
 Current version: 0.0.1-rc.0
 
@@ -22,7 +29,7 @@ Current version: 0.0.1-rc.0
 But you can also pass in a `--file` and/or a `--key` arg.
 
 ```sh
-bump --file=./app.json --key=expo.version
+$ bump --file=./app.json --key=expo.version
 ```
 
 ---
