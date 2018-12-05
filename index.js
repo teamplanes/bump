@@ -11,7 +11,7 @@ const ARGS = {
 	PROP_PATH: '--key'
 };
 
-const getFilePath = (file) => path.relative(__dirname, file);
+const getFilePath = (file) => path.resolve(process.cwd(), file);
 const getFile = (file) => JSON.parse(fs.readFileSync(getFilePath(file)));
 const setFile = (file, json) => fs.writeFileSync(getFilePath(file), JSON.stringify(json, null, 2), 'utf8');
 const getArg = (argName) => {
